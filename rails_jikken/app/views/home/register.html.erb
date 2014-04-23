@@ -1,0 +1,18 @@
+<h1>Home#register</h1>
+<%= form_for @user, :url => {:action => "register"} do |f| %>
+  <p>
+  <%= f.label :name, "名前" %>
+  <%= f.text_field :name %>
+  </p>
+  <p>
+  <%= f.label :password, "パスワード" %>
+  <%= f.password_field :password %>
+  </p>
+  <p>
+  <%= f.label :password_confirmation, "再確認" %>
+  <%= f.password_field :password_confirmation %>
+  </p>
+
+
+  <%= f.submit "登録" %>
+<% end %>
